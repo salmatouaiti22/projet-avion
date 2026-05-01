@@ -1,0 +1,70 @@
+/* Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("avion.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Titre */
+#titre {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Form container */
+fieldset {
+    width: 40%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+
+    /* شفافية */
+    background-color: rgba(255, 255, 255, 0.85);
+
+    /* shadow */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Legend */
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+button, input[type="submit"], input[type="reset"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+button:hover, input[type="submit"]:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Prix */
+#prix {
+    color: red;
+    font-weight: bold;
+}

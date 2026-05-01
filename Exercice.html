@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice</title>
+    <link rel="stylesheet" href="Exercice.css?v=2">
+</head>
+<body>
+    <h1 id="titre">Bienvenu sur notre site</h1>
+    <form action="reserve.php" method="POST">
+    <fieldset>
+        <legend>Réservation Billet</legend>
+
+        <label for="nom">Nom*</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom SVP" required>
+
+        <label for="prenom">Prénom*</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom SVP" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="contact@gmail.com" required>
+
+        <label class="A1" for="depart">Pays de départ</label>
+        <select id="depart" name="depart">
+            <option value="tunis">Tunis</option>
+            <option value="maghreb">Maghreb</option>
+            <option value="maroc">Maroc</option>
+        </select>
+
+        <label class="A1" for="destination">Pays de destination</label>
+        <select id="destination" name="destination">
+            <option value="france">France</option>
+            <option value="europe">Europe</option>
+            <option value="italie">Italie</option>
+        </select>
+
+        <label class="A1" for="dateDepart">Date de départ</label>
+        <input type="date" id="dateDepart" name="dateDepart">
+
+        <label class="A2" for="adulte">Adulte</label>
+        <input type="number" id="adulte" name="adulte" min="0" required>
+
+        <label class="A2" for="enfant">Enfants (-12ans)</label>
+        <input type="number" id="enfant" name="enfant" min="0" required>
+
+        <label class="A2" for="bebe">Bébé (-2ans)</label>
+        <input type="number" id="bebe" name="bebe" min="0" required>
+
+        <button type="button" onclick="calculerPrix()">Calculer</button>
+        <input type="text" id="resultat" name="prix_total" readonly>
+        <label>DT</label>
+
+        <hr>
+        <p id="message"></p>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </fieldset>
+</form>
+    <script src="Exercice.js?v=2"></script>
+</body>
+</html>
